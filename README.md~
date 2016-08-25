@@ -22,12 +22,13 @@ File:
 - DQN_img_closePrice.py: build a model by closeprice img and do evaluation.
 
 ### performance
-Use only daily close price. Bad performance.
+Use only daily close price. Bad performance. 
+ 
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/closePrice_rst.PNG)
-  *Training: 2011~2014 15-day image with avgYearLine,avgSeasonLine,avg20daysLine. 
-  *Testing : 2016/01 ~2016/08  
-  *Trading :stratage: sell while meet +10% profit or -5% loss.
-  *baseline:Considering of the rising stock price, the baseline is the average profit takes buying times into account.
+  * Training: 2011~2014 15-day image with avgYearLine,avgSeasonLine,avg20daysLine. 
+  * Testing : 2016/01 ~2016/08  
+  * Trading :stratage: sell while meet +10% profit or -5% loss.
+  * baseline:Considering of the rising stock price, the baseline is the average profit takes buying times into account.
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/closePrice_rst.PNG)
   That we get more profit that baseline. And the test file can use for predict whether to buy without re-training the model.
 
@@ -36,6 +37,7 @@ The model is original from RobRomijnders 's work used for time series data (http
  I've change some parameter and use the daily close price as data
 ### performance
 Feature MA can drop the loss compare with RSI and ClosePrice at training step.
+ 
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/cnn_tsc_rst.PNG)
 ##DQN_MLP_closePrice
 Some resources really help a lot while building DQN. The main different is how to set the reward function and way to train Q_network.
@@ -47,11 +49,11 @@ My implement is under close price. This could be change to other features like R
 Not work in closePrice. Better with other feature.
 ##DQN_KD_value
 Use KD value picture to predict.
-'''
+```
 python DQN_kd_pic.py //this call KD_draw.py and build model.
-'''
+```
 ### performance
-  *Training: 2011~2014 15-day K value and D value image
-  *Testing : 2015/07 ~2016/07  
+  * Training: 2011~2014 15-day K value and D value image
+  * Testing : 2015/07 ~2016/07  
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/KD_rst.PNG)
 

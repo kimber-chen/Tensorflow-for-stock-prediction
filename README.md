@@ -44,7 +44,8 @@ Feature MA can drop the loss compare with RSI and ClosePrice at training step.
 Some resources really help a lot while building DQN. The main different is how to set the reward function and way to train Q_network.
   * https://zhuanlan.zhihu.com/p/21477488
   * https://github.com/gliese581gg/DQN_tensorflow
-My implement is under close price. This could be change to other features like RSI,KD,MA....Or, use all of them. There is CNN code that could be edit to meet the requirement (size of batch).  
+ 
+My implement is under closeprice. This could be change to other features like RSI,KD,MA....Or, use all of them. There is CNN code that could be edit to meet the requirement (size of batch).  
  
 ### performance
 Not work in closePrice. Better with other feature.

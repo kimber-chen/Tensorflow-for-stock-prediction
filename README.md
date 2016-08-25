@@ -5,20 +5,20 @@ Feature include daily close price, MA, KD, RSI, yearAvgPrice..... Detail describ
 All of the work are done by using the same stock(2330 in Taiwan stock) which are collected from yahoo.finance.
 
 ##requirement
--Tensorflow
--yahoo_finance
--numpy
+- Tensorflow
+- yahoo_finance
+- numpy
 if you run DQN_KD_value, DQN_cnn_image you'll need extra
--matplotlib
+- matplotlib
 -cv2
 
 ##DQN_cnn_image
 The major mork of this project. We feed the data(yearline,monthline, closePrice) as image and use CNN to recognize their pattern. 
 file:
--DQN_draw_yearline.py  //use for make yearline img and closeprice img, and then build model.
--DQN_yearline_reward.py :to build model which should be train for about 24hr. //run DQN_draw_yearline.py first
--Test model by yearline.ipynb : There is one model exsit in saved_year_r. The code create some img to test on that.
--DQN_img_closePrice.py: build a model by closeprice img and do evaluation.
+- DQN_draw_yearline.py  //use for make yearline img and closeprice img, and then build model.
+- DQN_yearline_reward.py :to build model which should be train for about 24hr. //run DQN_draw_yearline.py first
+- Test model by yearline.ipynb : There is one model exsit in saved_year_r. The code create some img to test on that.
+- DQN_img_closePrice.py: build a model by closeprice img and do evaluation.
 
 ### performance
 

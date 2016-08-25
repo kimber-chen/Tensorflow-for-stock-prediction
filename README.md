@@ -1,6 +1,6 @@
 # Tensorflow work for stock prediction
 Use Tensorflow to run CNN for predict stock movement. Hope to find out which pattern will follow the price rising. Different implement codes are in seperate folder.
-
+ 
 Feature include daily close price, MA, KD, RSI, yearAvgPrice..... Detail described below. This work is just an sample to demo deep learning. The result is not well estimated.
 All of the work are done by using the same stock(2330 in Taiwan stock) which are collected from yahoo.finance.
 

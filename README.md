@@ -30,7 +30,8 @@ Use only daily close price. Bad performance.
   * Trading :stratage: sell while meet +10% profit or -5% loss.
   * baseline:Considering of the rising stock price, the baseline is the average profit takes buying times into account.
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/closePrice_rst.PNG)
-  That we get more profit that baseline. And the test file can use for predict whether to buy without re-training the model.
+  
+ That we get more profit that baseline. And the test file can use for predict whether to buy without re-training the model.
 
 ##cnn_tsc
 The model is original from RobRomijnders 's work used for time series data (http://robromijnders.github.io/CNN_tsc/) 

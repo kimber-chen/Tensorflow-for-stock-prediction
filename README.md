@@ -5,6 +5,8 @@ Feature include daily close price, MA, KD, RSI, yearAvgPrice..... Detail describ
  
 All of the work are done by using the same stock(2330 in Taiwan stock) which are collected from yahoo.finance. Please notice that this stock perform a stable rise these years. But our result get a little better than just ramdon guess.
 
+For Chinese version slider please check HERE([中文投影片](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/tensorflow%E8%82%A1%E7%A5%A8%E9%A0%90%E6%B8%AC_%E5%A4%A7%E7%B6%B1.pdf))
+
 ##requirement
 - Tensorflow
 - yahoo_finance

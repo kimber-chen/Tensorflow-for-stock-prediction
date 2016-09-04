@@ -24,19 +24,22 @@ File:
 - DQN_img_closePrice.py: build a model by closeprice img and do evaluation.
 
 ### Performance
-Use only daily close price. Bad performance. 
+  * Training: 2011~2014 15-day image with only daily close price.
+  * Testing : 2016/01 ~2016/08  
+  * Trading stratage: Reward=(Tomorrow's close price)-(today's close price) if predict buy. Negate the number while predicting sell. 
+  * Bad performance. 
  
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/closePrice_rst.PNG)
-  * Training: 2011~2014 15-day image with avgYearLine,avgSeasonLine,avg20daysLine. 
-  * Testing : 2016/01 ~2016/08  
+
   * Trading stratage: sell while meet +10% profit or -5% loss.
-  * baseline: Considering of the rising stock price, the baseline is the average profit takes buying times into account.
+  * Baseline: Considering of the rising stock price, the baseline is the average profit takes buying times into account.
+  * We get more profit then baseline. And the testing file can be used for evaluating whether to believe in the model.
+  
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/yearline_rst.PNG)
   
- That we get more profit that baseline. And the test file can use for predict whether to buy without re-training the model.
 
 ##2.CNN_tsc
-The model is original from RobRomijnders 's work used for time series data (http://robromijnders.github.io/CNN_tsc/) 
+The model is originated from RobRomijnders 's work used for time series data (http://robromijnders.github.io/CNN_tsc/) 
  I've change some parameter and use different indicators to find out when to buy the stock is good.
 ### Performance
 ####Part 1. Indicators

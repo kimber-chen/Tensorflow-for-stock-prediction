@@ -27,12 +27,12 @@ File:
 #### exp 1
   * Training: 2011~2014 15-day image with only daily close price.
   * Testing : 2016/01 ~2016/08  
-  * Trading stratagy: Reward=(Tomorrow's close price)-(today's close price) if predict buy. Negate the number while predicting sell. 
+  * Trading strategy: Reward=(Tomorrow's close price)-(today's close price) if predict buy. Negate the number while predicting sell. 
   * Bad performance. 
  
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/closePrice_rst.PNG)
 #### exp 2
-  * Trading stratagy: sell while meet +10% profit or -5% loss.
+  * Trading strategy: sell while meet +10% profit or -5% loss.
   * Baseline: Considering of the rising stock price, the baseline is the average profit takes buying times into account.
   * We get more profit then baseline. And the testing file can be used for evaluating whether to believe in the model.
   

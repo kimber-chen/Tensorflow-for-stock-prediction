@@ -5,7 +5,10 @@ Feature include daily close price, MA, KD, RSI, yearAvgPrice..... Detail describ
  
 All of the work are done by using the same stock(2330 in Taiwan stock) which are collected from yahoo.finance. Please notice that this stock perform a stable rise these years. But our result get a little better than just random guess.
 
-For Chinese version slider please check HERE([中文投影片](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/tensorflow%E8%82%A1%E7%A5%A8%E9%A0%90%E6%B8%AC_%E5%A4%A7%E7%B6%B1.pdf))
+For Brief tutorial slider please check ([Distributed Tensorflow & Stock prediction](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/DistributedTensorFlow%26StockPred.pdf))
+
+For Chinese outline slider please check HERE([中文簡介](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/tensorflow%E8%82%A1%E7%A5%A8%E9%A0%90%E6%B8%AC_%E5%A4%A7%E7%B6%B1.pdf))
+
 
 ##requirement
 - Tensorflow
@@ -17,6 +20,10 @@ If you run DQN_KD_value, DQN_cnn_image you'll need extra
 
 ##1.DQN_CNN_image
 The major work of this project. We feed data(yearline,monthline, closePrice) as image and use CNN to recognize their pattern. 
+Some resources really help a lot while building DQN. The main difference is how to set the reward function and way to train Q_network.
+  * https://zhuanlan.zhihu.com/p/21477488
+  * https://github.com/gliese581gg/DQN_tensorflow
+
 File:
 - DQN_draw_yearline.py  :use for making yearline img and closeprice img, and then build model.
 - DQN_yearline_reward.py :to build model which should be train for about 24hr. //run DQN_draw_yearline.py first
@@ -57,10 +64,7 @@ With 10 days MA5 as an instance.
 ![alt tag](https://github.com/kimber-chen/Tensorflow-for-stock-prediction/blob/master/graph/cnn_tsc_when.PNG)
 
 ##3.DQN_MLP_closePrice
-Some resources really help a lot while building DQN. The main different is how to set the reward function and way to train Q_network.
-  * https://zhuanlan.zhihu.com/p/21477488
-  * https://github.com/gliese581gg/DQN_tensorflow
- 
+
 My implement is under close price. This could be change to other features like RSI,KD,MA....Or, use all of them. There is CNN code that could be edit to meet the requirement (size of batch).  
  
 ### Performance
